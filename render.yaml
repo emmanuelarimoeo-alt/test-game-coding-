@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: network-arena
+    runtime: node
+    plan: free
+    numInstances: 1
+    buildCommand: node --test tests.mjs
+    startCommand: node server.mjs
+    healthCheckPath: /healthz
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: NODE_ENV
+        value: production

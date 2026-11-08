@@ -1,0 +1,9 @@
+{
+  "name": "network-arena",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Two-team simulated hacking game for separate laptops",
+  "scripts": {"start": "node server.mjs", "test": "node --test tests.mjs"},
+  "engines": {"node": ">=20"}
+}
